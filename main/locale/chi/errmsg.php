@@ -1,0 +1,60 @@
+<?php
+class Err {
+static $SUCCESS = array(0, '操作成功');
+static $SUCCESS_PENDING = array(1, '任务提交成功，等待后台处理');
+static $FAILED = array(-1, '操作失败，请稍后重试');
+static $UNKNOWN_ERROR = array(-2, '未知错误');
+static $VERSION_TOO_LOW = array(-15, '该版本已不支持该功能，请重新登录后进行软件更新');
+static $LOGIN_NEEDED = array(-21, '需要登录');
+static $AUTH_FAILED = array(-22, '授权失败');
+static $INPUT_REQUIRED = array(-31, '缺少参数');
+static $INPUT_INVALID = array(-32, '参数无效');
+static $INPUT_TOO_LONG = array(-33, '参数长度过长');
+static $INPUT_TOO_SHORT = array(-34, '参数长度过短');
+static $INPUT_FORMAT_INVALID = array(-35, '参数格式无效');
+static $UPLOAD_FAILED = array(-41, '上传失败');
+static $UPLOAD_MAX_SIZE_EXCEED = array(-42, '文件过大');
+static $UPLOAD_EXT_NOT_SUPPORT = array(-43, '文件类型不支持');
+static $DATA_NOT_FOUND = array(-51, '数据不存在');
+static $DATA_VALIDATE_ERROR = array(-52, '数据校验错误');
+static $DATA_SAVE_ERROR = array(-53, '数据保存错误');
+static $DATA_DESTROY_ERROR = array(-54, '数据删除错误');
+static $DATA_EXIST = array(-55, '数据已存在');
+static $OPERATE_NOT_PERMIT = array(-61, '操作不允许');
+static $OPERATE_ON_ERROR_STATE = array(-62, '当前状态不能执行该操作');
+static $OPERATE_ALREADY_DONE = array(-63, '已经做过该操作');
+static $OPERATE_OWNNER_ONLY = array(-64, '只允许所有者进行操作');
+static $OPERATE_VIP_ONLY = array(-65, '只允许VIP进行操作');
+static $OPERATE_NOT_PERMIT_ON_SELF = array(-66, '不允许对自己执行该操作');
+static $OPERATE_TOO_FREQUENT = array(-67, '操作太频繁');
+static $USERS_API_EXCEPTION = array(-71, '用户服务异常');
+static $ACCOUNT_ACCOUNT_NOTEXIST = array(-101, '用户不存在');
+static $ACCOUNT_USERID_INVALID = array(-102, '用户名格式无效');
+static $ACCOUNT_PASSWORD_INVALID = array(-103, '密码无效');
+static $ACCOUNT_PASSWORD_MISMATCH = array(-104, '密码不匹配');
+static $ACCOUNT_NICKNAME_EXIST = array(-105, '昵称已存在');
+static $ACCOUNT_NICKNAME_INVALID = array(-106, '昵称无效');
+static $ACCOUNT_GENDER_INVALID = array(-107, '性别不合法');
+static $ACCOUNT_EQUIPMENTID_INVALID = array(-109, '设备号无效');
+static $RELATION_ALREADY_FOLLOWED = array(-121, '已经关注过该用户');
+static $RELATION_NOT_FOLLOWING = array(-122, '未关注该用户');
+static $RELATION_FOLLOW_FAILED = array(-123, '关注失败');
+static $ROOM_TITLE_WORD_INVALID = array(-151, '标题内容不合法');
+static $ROOM_TITLE_LEN_INVALID = array(-152, '标题长度不合法');
+static $ROOM_CATEGORY_INVALID = array(-153, '类别不存在');
+static $ROOM_STATE_INVALID = array(-154, '当前房间状态不能执行该操作');
+static $ROOM_ALREADY_PAYED = array(-155, '已经发奖');
+static $ROOM_BALANCE_INSUFFICIENT = array(-156, '房间余额不足');
+static $ROOM_NOT_OWNNER = array(-157, '不是房主');
+static $ROOM_TALK_BLOCKED = array(-158, '你被房主禁言了');
+static $ROOM_ROOM_ALREADY_CREATED = array(-159, '房间已创建');
+static $MESSAGE_WORD_INVALID = array(-171, '消息内容不合法');
+static $MESSAGE_LEN_INVALID = array(-172, '消息长度不合法');
+static $TRANS_OPERATE_FAILED = array(-210, '操作失败');
+static $TRANS_OPERATE_INVALID = array(-211, '无效操作');
+static $TRANS_OPERATE_ON_INVALID_USER = array(-212, '操作无效用户');
+static $TRANS_OPERATE_NOT_PERMIT = array(-213, '不允许进行该操作');
+static $TRANS_BALANCE_INSUFFICIENT = array(-214, '余额不足');
+
+}
+?>
