@@ -1,4 +1,4 @@
 <?php
 require 'bootstrap.php';
 
-print_r($config);
+// print_r($config);
